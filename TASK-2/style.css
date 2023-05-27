@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --bg-color:#2a2a2a;
+    --second-bg-color:#202020;
+    --text-color:#fff;
+    --second-color: #ccc;
+    ---main-color:#38E54D;
+    --big-font: 3rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex; /*space between the divs in that parent div*/
+    align-items: center; /*aligning the centering the elemnts*/
+    justify-content: space-between; /*space between the divs in horizontal*/
+    background: transparent;
+    padding: 22px 15px;
+    border-bottom: 1px solid transparent;
+    transition: all .45s ease;
+}
+.logo{
+    color: var(--text-color);
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+span{
+    color: var(---main-color);
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    color: grey;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0 25px;
+    transition: all .45s ease;
+}
+.navlist a:hover{
+    color: var(---main-color);
+}
+.navlist a.active{
+    color: var(---main-color);
+}
+section{
+    padding: 160px 15% 120px;
+}
+.home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(./HD-wallpaper-steve-jobs.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.home-text h1{
+    font-size: var(--big-font);
+    font-weight: 700;
+    color: var(--text-color);
+    list-style: 1.1;
+    margin: 0 0 8px;
+}
+.home-text h3{
+    columns: var(--text-color);
+    margin:0 0 35px ;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.home-text p{
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 1.8;
+    margin-bottom: 40px;
+    margin-top: -20px;
+}
+header.sticky{
+    background-color: var(--bg-color);
+    border-bottom: 1px solid #ffffff1a;
+    padding: 20px 5%;
+}
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+.image-profile{
+    width: 300px;
+    border-radius: 8px;
+}
+.about-text h2{
+    font-size: var(--h2-font);
+    line-height: 0.7;
+}
+.about-text h3{
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--text-color);
+    line-height: 1.5;
+    margin: 5px 0 10px;
+}
+.about-text p{
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 1.8;
+    margin: 1rem;
+}
+.more{
+    background: var(--second-bg-color);
+}
+.main-text{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -90px;
+}
+.main-text h2:hover{
+    color: var(---main-color);
+    transition: all .45s ease;
+}
+.second-text{
+    font-size: var(--p-font);
+    margin-bottom: -100px;
+}
